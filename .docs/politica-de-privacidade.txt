@@ -1,0 +1,134 @@
+Política de Privacidade
+
+Última atualização: 26/08/2025
+
+Quem somos
+Omnimaker Soluções em Tecnologia, com sede em Feira de Santana - BA, é responsável pelo tratamento de dados pessoais coletados em nosso site e em nossos serviços de automação de atendimento via WhatsApp. Contato do Encarregado (DPO): João Gleison Oliveira Gomes – contato@omnimaker.io – (75)98178-5769.
+
+Abrangência
+Esta Política descreve como coletamos, usamos, compartilhamos e protegemos dados pessoais de visitantes do site, leads, clientes, usuários finais e representantes de empresas que utilizam nossos serviços. Aplica-se ao site, páginas de captura, formulários, conteúdos e integrações oficialmente disponibilizadas pela Omnimaker.
+
+Dados que coletamos
+3.1 Dados fornecidos diretamente
+
+Identificação e contato: nome, e‑mail, telefone/WhatsApp, empresa, cargo, cidade/UF.
+
+Dados comerciais: segmento, tamanho da empresa, interesses de produto/planos, mensagens enviadas em formulários ou chats.
+
+3.2 Dados coletados automaticamente
+
+Dados de navegação: IP, dispositivo, navegador, páginas acessadas, origem de tráfego, cookies, identificadores on-line, tempo de sessão.
+
+Métricas de uso: eventos de cliques, CTAs, taxas de conversão.
+
+Logs técnicos para segurança e diagnóstico.
+
+3.3 Dados de terceiros e integrações
+
+Plataformas de anúncios e analytics, CRMs, ferramentas de atendimento e provedores de mensagens (por exemplo, WhatsApp Business API/BSP), quando autorizados pelo titular/cliente e necessários à prestação do serviço.
+
+Bases públicas ou parceiros, seguindo limites legais e contratuais.
+
+Bases legais e finalidades
+Tratamos dados com base em:
+
+Execução de contrato e procedimentos preliminares: cadastro, implantação (setup), suporte, faturamento, operação do serviço.
+
+Legítimo interesse: melhoria do site e produtos, segurança, prevenção à fraude, comunicações institucionais relevantes.
+
+Consentimento: newsletters, materiais de marketing, cookies não essenciais, campanhas e remarketing.
+
+Cumprimento de obrigação legal/regulatória: registros fiscais, atendimento a autoridades.
+
+Principais finalidades:
+
+Prover o site, responder contatos, qualificar e converter leads.
+
+Implantar e operar soluções de automação de WhatsApp, inclusive configuração lado a lado (setup completo).
+
+Oferecer suporte, treinamento e sucesso do cliente.
+
+Medir performance, realizar análises e testes.
+
+Enviar comunicações de marketing, quando consentidas, com opção de opt‑out.
+
+Garantir segurança, integridade e conformidade.
+
+Cookies e tecnologias similares
+Utilizamos cookies essenciais (funcionamento do site) e não essenciais (analytics, desempenho, marketing). O banner de consentimento permite aceitar, rejeitar ou personalizar categorias. Preferências podem ser alteradas em [link/ícone “Preferências de Cookies” no rodapé]. Sem consentimento, cookies não essenciais não são ativados.
+
+Compartilhamento de dados
+Não compartilhamos dados:
+
+Provedores e operadores: hospedagem, infraestrutura, analytics, atendimento, e‑mail/SMS/WhatsApp, CRM, pagamento, auditoria e segurança.
+
+Parceiros comerciais e integrações solicitadas pelo cliente.
+
+Obrigações legais: autoridades públicas, ordens judiciais.
+
+Operações societárias: fusões, aquisições ou reorganizações, com garantia de continuidade das proteções.
+
+Todos os terceiros seguem contratos e medidas de segurança compatíveis com a LGPD.
+
+Transferências internacionais
+Dados podem ser processados fora do Brasil quando fornecedores utilizam infraestrutura global. Nesses casos, adotamos salvaguardas adequadas (cláusulas contratuais, padrões de segurança e avaliações de impacto), buscando níveis de proteção equivalentes.
+
+Retenção e descarte
+Mantemos dados somente pelo tempo necessário às finalidades indicadas, cumprimento de obrigações legais/contratuais, exercício regular de direitos ou defesa em processos. Após o prazo, dados são eliminados ou anonimizados de forma segura.
+
+Direitos do titular
+Nos termos da LGPD, o titular pode:
+
+Confirmar a existência de tratamento e acessar dados.
+
+Corrigir dados incompletos, inexatos ou desatualizados.
+
+Anonimizar, bloquear ou eliminar dados desnecessários, excessivos ou tratados em desconformidade.
+
+Portar dados a outro fornecedor (quando aplicável).
+
+Eliminar dados tratados com consentimento.
+
+Obter informações sobre compartilhamentos e consequências da negativa.
+
+Revogar consentimento e se opor a tratamentos baseados em legítimo interesse, quando cabível.
+
+Para exercer direitos, contate: contato@omnimaker.io e forneça informações para verificação de identidade. Responderemos nos prazos legais.
+
+Segurança da informação
+Adotamos controles técnicos e organizacionais compatíveis com a natureza das operações, incluindo:
+
+Criptografia em trânsito e, quando aplicável, em repouso.
+
+Controle de acesso e segregação de funções.
+
+Registro e monitoramento de eventos.
+
+Backups, gestão de vulnerabilidades e testes periódicos.
+
+Treinamento de colaboradores e acordos de confidencialidade.
+Apesar dos esforços, nenhum sistema é 100% seguro. Em caso de incidente, seguiremos planos de resposta e notificações conforme a legislação.
+
+Comunicações de marketing
+Envios promocionais ocorrem com base em consentimento ou legítimo interesse, sempre com opção clara de descadastro em cada mensagem. Preferências podem ser gerenciadas em [link de preferências], sem prejuízo de comunicações transacionais essenciais ao serviço.
+
+Uso do WhatsApp e automações
+Ao contratar a Omnimaker, o cliente declara ter obtido consentimentos e bases legais necessárias para contatar seus consumidores via WhatsApp e outros canais. Atuamos como operador para processar dados conforme instruções do cliente, respeitando políticas da Meta/WhatsApp e normas aplicáveis. O cliente é responsável pelo conteúdo das mensagens, listas e regras de compliance do próprio negócio.
+
+Crianças e adolescentes
+Nossos serviços não se destinam a menores de 18 anos. Não coletamos intencionalmente dados de crianças. Se houver coleta indevida, solicite exclusão imediata via contato@omnimaker.io.
+
+Sites e serviços de terceiros
+O site pode conter links/integradores de terceiros. Cada serviço possui sua própria política. Não nos responsabilizamos por práticas externas. Recomenda-se ler as políticas desses terceiros antes de fornecer dados.
+
+Alterações desta Política
+Podemos atualizar esta Política para refletir mudanças legais, operacionais ou tecnológicas. A versão vigente será sempre publicada neste endereço, com indicação de “Última atualização”. Mudanças relevantes poderão ser comunicadas por e‑mail ou aviso em destaque.
+
+Contato
+Dúvidas, solicitações ou reclamações:
+
+E‑mail do Encarregado (DPO): contato@omnimaker.io
+
+Endereço: Rua Boa Nova, Conceição, Feira de Santana -BA, CEP 44065-382
+
+Canal adicional: WhatsApp (75)98178-5769
