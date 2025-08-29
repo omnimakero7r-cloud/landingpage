@@ -1,14 +1,15 @@
-import React, { useRef, useEffect } from "react";
+"use client";
+import React from "react";
 import Image from "next/image";
 import { Brand } from "@/types/brand";
-import { motion } from "framer-motion";
+import { MotionA } from "@/components/ui/MotionComponents";
 
 const SingleBrand = ({ brand }: { brand: Brand }) => {
   const { image, href, name, imageLight, id } = brand;
 
   return (
     <>
-      <motion.a
+      <MotionA
         variants={{
           hidden: {
             opacity: 0,
@@ -39,7 +40,7 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
           alt={name}
           fill
         />
-      </motion.a>
+      </MotionA>
     </>
   );
 };

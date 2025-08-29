@@ -24,12 +24,10 @@ export default function DocsPage() {
 
             <div className="w-full px-4 lg:w-3/4">
               <div className="blog-details blog-details-docs shadow-three dark:bg-gray-dark rounded-xs bg-white px-8 py-11 sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]">
-                <h1>Welcome to Startup Documentation</h1>
+                <h1>Bem vindo a documentação do Omnimaker</h1>
 
-                <p className="text-body-color dark:text-body-color-dark text-base">
-                  This document serves as a simple template to showcase a sample
-                  layout and format. It is solely created for demonstration
-                  purposes and is not intended for any official use.
+                  <p className="text-body-color dark:text-body-color-dark text-base">
+                   Esta documentação serve como um template simples para mostrar um layout e formato de exemplo. É criada apenas para fins de demonstração e não é destinada a uso oficial.
                 </p>
                 <p className="text-body-color dark:text-body-color-dark text-base">
                   Please visit:{" "}

@@ -1,14 +1,15 @@
+"use client";
 import React from "react";
 import { Feature } from "@/types/feature";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { MotionDiv } from "@/components/ui/MotionComponents";
 
 const SingleFeature = ({ feature }: { feature: Feature }) => {
   const { icon, title, description } = feature;
 
   return (
     <>
-      <motion.div
+      <MotionDiv
         variants={{
           hidden: {
             opacity: 0,
@@ -33,7 +34,7 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
           {title}
         </h3>
         <p>{description}</p>
-      </motion.div>
+      </MotionDiv>
     </>
   );
 };

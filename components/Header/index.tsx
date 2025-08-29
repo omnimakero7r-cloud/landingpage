@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import PreloadLink from "@/components/ui/PreloadLink";
 
 import ThemeToggler from "./ThemeToggler";
 import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
@@ -52,20 +52,20 @@ const Header = () => {
     >
       <div className="relative mx-auto max-w-c-1390 items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0">
         <div className="flex w-full items-center justify-between xl:w-1/4">
-          <a href="/">
+          <a href="/" className="relative">
             <Image
               src="/images/logo/logo-dark.svg"
               alt="logo"
-              width={119.03}
-              height={30}
-              className="hidden w-full dark:block"
+              width={130}
+              height={24}
+              className="hidden dark:block"
             />
             <Image
               src="/images/logo/logo-light.svg"
               alt="logo"
-              width={119.03}
-              height={30}
-              className="w-full dark:hidden"
+              width={130}
+              height={24}
+              className="dark:hidden"
             />
           </a>
 
@@ -144,13 +144,13 @@ const Header = () => {
                       >
                         {menuItem.submenu.map((item, key) => (
                           <li key={key} className="hover:text-primary">
-                            <Link href={item.path || "#"}>{item.title}</Link>
+                            <PreloadLink href={item.path || "#"}>{item.title}</PreloadLink>
                           </li>
                         ))}
                       </ul>
                     </>
                   ) : (
-                    <Link
+                    <PreloadLink
                       href={`${menuItem.path}`}
                       className={
                         pathUrl === menuItem.path
@@ -159,7 +159,7 @@ const Header = () => {
                       }
                     >
                       {menuItem.title}
-                    </Link>
+                    </PreloadLink>
                   )}
                 </li>
               ))}
@@ -168,10 +168,11 @@ const Header = () => {
 
           <div className="mt-7 flex items-center gap-6 xl:mt-0">
             <ThemeToggler />
+            {/*Botão de login */}
             {buttonData.map((button) => (
-              <Link key={button.id} href={button.href}>
+              <PreloadLink key={button.id} href={button.href}>
                 <InteractiveHoverButton text={button.text} />
-              </Link>
+              </PreloadLink>
             ))}
           </div>
         </div>

@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Otimizações de SEO
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Bloquear páginas de auth
+Disallow: /auth/
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://omnimaker.io/sitemap.xml
+
+# Políticas
+Allow: /politica-de-privacidade
+Allow: /termos-de-uso

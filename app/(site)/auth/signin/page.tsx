@@ -1,12 +1,11 @@
 import Signin from "@/components/Auth/Signin";
-import { Metadata } from "next";
+import { generateMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Login - Omnimaker",
-
-  // other metadata
-  description: "Esta é a página de Login para Startup Pro",
-};
+export const metadata = generateMetadata({
+  title: "Login",
+  description: "Faça login em sua conta Omnimaker para gerenciar sua automação de WhatsApp",
+  noIndex: true,
+});
 
 const SigninPage = () => {
   return (

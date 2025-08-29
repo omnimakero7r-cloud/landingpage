@@ -1,7 +1,5 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Image from "next/image";
+import { MotionDiv } from "@/components/ui/MotionComponents";
 
 const About = () => {
   return (
@@ -10,7 +8,7 @@ const About = () => {
       <section className="overflow-hidden pb-20 lg:pb-25 xl:pb-30">
         <div className="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0">
           <div className="flex items-center gap-8 lg:gap-32.5">
-            <motion.div
+            <MotionDiv
               variants={{
                 hidden: {
                   opacity: 0,
@@ -40,8 +38,8 @@ const About = () => {
                 className="hidden dark:block"
                 fill
               />
-            </motion.div>
-            <motion.div
+            </MotionDiv>
+            <MotionDiv
               variants={{
                 hidden: {
                   opacity: 0,
@@ -102,7 +100,7 @@ const About = () => {
                   <p>consectetur adipiscing elit fermentum ultricies.</p>
                 </div>
               </div>
-            </motion.div>
+            </MotionDiv>
           </div>
         </div>
       </section>
@@ -112,7 +110,7 @@ const About = () => {
       <section>
         <div className="mx-auto max-w-c-1235 overflow-hidden px-4 md:px-8 2xl:px-0">
           <div className="flex items-center gap-8 lg:gap-32.5">
-            <motion.div
+            <MotionDiv
               variants={{
                 hidden: {
                   opacity: 0,
@@ -161,8 +159,8 @@ const About = () => {
                   </svg>
                 </a>
               </div>
-            </motion.div>
-            <motion.div
+            </MotionDiv>
+            <MotionDiv
               variants={{
                 hidden: {
                   opacity: 0,
@@ -192,7 +190,7 @@ const About = () => {
                 className="hidden dark:block"
                 fill
               />
-            </motion.div>
+            </MotionDiv>
           </div>
         </div>
       </section>
