@@ -1,13 +1,11 @@
 import React from "react";
 import Contact from "@/components/Contact";
-import { Metadata } from "next";
+import { generateMetadata, pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Suporte - Omnimaker",
-
-  // other metadata
-  description: "Suporte da Omnimaker"
-};
+export const metadata = generateMetadata({
+  ...pageMetadata.suporte,
+  path: "/suporte",
+});
 
 const SupportPage = () => {
   return (

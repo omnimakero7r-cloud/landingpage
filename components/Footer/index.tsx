@@ -208,7 +208,7 @@ const Footer = () => {
                     <div className="relative">
                       <input
                         type="text"
-                        placeholder="Email address"
+                        placeholder="Endereço de e-mail"
                         className="w-full rounded-full border border-stroke px-6 py-3 shadow-solid-11 focus:border-primary focus:outline-hidden dark:border-strokedark dark:bg-black dark:shadow-none dark:focus:border-primary"
                       />
 
@@ -267,8 +267,8 @@ const Footer = () => {
             >
               <ul className="flex items-center gap-8">
                 <li>
-                  <a href="#" className="hover:text-primary">
-                    English
+                  <a href="/termos-de-uso" className="hover:text-primary">
+                    Termos de Uso
                   </a>
                 </li>
                 <li>
@@ -303,7 +303,7 @@ const Footer = () => {
               className="animate_top"
             >
               <p>
-                &copy; {new Date().getFullYear()} Solid. All rights reserved
+                &copy; {new Date().getFullYear()} Omnimaker. Todos os direitos reservados
               </p>
             </motion.div>
 

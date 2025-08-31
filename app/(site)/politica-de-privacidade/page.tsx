@@ -1,10 +1,10 @@
 import React from "react";
-import { Metadata } from "next";
+import { generateMetadata, pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Política de Privacidade - Omnimaker",
-  description: "Política de Privacidade da Omnimaker",
-};
+export const metadata = generateMetadata({
+  ...pageMetadata["politica-de-privacidade"],
+  path: "/politica-de-privacidade",
+});
 
 const PoliticaDePrivacidade = () => (
   <>
@@ -13,12 +13,12 @@ const PoliticaDePrivacidade = () => (
       <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
         {/* <!-- Section Header Start --> */}
         <div className="animate_top mx-auto mb-16 text-center">
-          <div className="mb-4 inline-block rounded-full bg-zumthor px-4.5 py-1.5 dark:border dark:border-strokedark dark:bg-blacksection">
-            <span className="text-sectiontitle font-medium text-black dark:text-white">
+          <div className="mb-4 inline-block rounded-full bg-lime-300 px-4.5 py-1.5 border-black dark:border-strokedark">
+            <span className="text-sectiontitle font-medium text-black">
               Política de Privacidade
             </span>
           </div>
-          <h1 className="mx-auto mb-4 text-3xl font-bold text-black dark:text-white md:w-4/5 xl:w-1/2 xl:text-sectiontitle3">
+          <h1 className="mx-auto mb-4 text-2xl md:text-3xl lg:text-4xl font-bold text-black dark:text-white md:w-4/5 xl:w-1/2">
             Proteção de Dados e Privacidade
           </h1>
           <p className="mx-auto text-body-color dark:text-body-color-dark md:w-4/5 lg:w-3/5 xl:w-[46%]">

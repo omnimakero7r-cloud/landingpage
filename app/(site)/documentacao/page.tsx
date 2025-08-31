@@ -1,20 +1,18 @@
 import SidebarLink from "@/components/Docs/SidebarLink";
-import { Metadata } from "next";
+import { generateMetadata, pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Docs Page - Solid SaaS Boilerplate",
-
-  // other metadata
-  description: "This is Docs page for Solid Pro"
-};
+export const metadata = generateMetadata({
+  ...pageMetadata.documentacao,
+  path: "/documentacao",
+});
 
 export default function DocsPage() {
   return (
     <>
-      <section className="pb-16 pt-24 md:pb-20 md:pt-28 lg:pb-24 lg:pt-32">
-        <div className="container mx-auto">
-          <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4 lg:w-1/4">
+      <section className="pb-16 pt-24 md:pb-20 md:pt-28 lg:pb-24 lg:pt-32 ">
+        <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
+          <div className="gap-4 lg:gap-0 flex flex-wrap lg:flex-nowrap">
+            <div className="w-full sm:w-2/3 md:w-1/2 px-4 lg:w-1/4">
               <div className="sticky top-[74px] rounded-lg border border-white p-4 shadow-solid-4  transition-all  dark:border-strokedark dark:bg-blacksection">
                 <ul className="space-y-2">
                   <SidebarLink />
@@ -30,14 +28,13 @@ export default function DocsPage() {
                    Esta documentação serve como um template simples para mostrar um layout e formato de exemplo. É criada apenas para fins de demonstração e não é destinada a uso oficial.
                 </p>
                 <p className="text-body-color dark:text-body-color-dark text-base">
-                  Please visit:{" "}
+                  Visite:{" "}
                   <b>
-                    <a href="https://nextjstemplates.com/docs">
-                      nextjstemplates.com/docs
+                    <a href="/documentacao">
+                      https://omnimaker.io/documentacao
                     </a>
                   </b>{" "}
-                  to check out the real docs, setup guide and even video
-                  instructions
+                  para ver a documentação real, o guia de configuração e até mesmo vídeos de instruções
                 </p>
               </div>
             </div>

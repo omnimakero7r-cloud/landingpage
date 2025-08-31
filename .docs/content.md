@@ -1,5 +1,5 @@
 🚀 Landing Page – Omnimaker
-1. Hero Section
+## 1. Hero Section
 
 Headline Impactante:
 👉 "Seu WhatsApp trabalhando por você 24 horas por dia: agende, venda e atenda clientes automaticamente."
@@ -11,7 +11,7 @@ Com a Omnimaker, você coloca a inteligência artificial para trabalhar no seu l
 CTA:
 [ Quero ver na prática – Agendar demonstração gratuita ]
 
-2. Benefícios (gatilho de ganho imediato + economia)
+## 2. Benefícios (gatilho de ganho imediato + economia)
 
 Título: "Resultados que fazem diferença já nos primeiros dias"
 
@@ -29,7 +29,7 @@ Título: "Resultados que fazem diferença já nos primeiros dias"
 
 🔑 E o melhor: o investimento se paga em apenas 3 a 6 meses — e continua gerando retorno todos os dias.
 
-3. Como Funciona (gatilho de autoridade + simplicidade)
+## 03. Como Funciona (gatilho de autoridade + simplicidade)
 
 Título: "Uma experiência simples para você e incrível para seus clientes"
 
@@ -57,7 +57,7 @@ Transferência para humano só quando realmente necessário
 
 Relatórios de conversão para você acompanhar resultados
 
-4. Planos (gatilho de escassez + comparação)
+## 4. Planos (gatilho de escassez + comparação)
 
 Título: "Três opções para acelerar o crescimento do seu negócio"
 

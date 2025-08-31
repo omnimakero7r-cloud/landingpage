@@ -4,10 +4,10 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Página de Detalhes do Blog - Solid SaaS Boilerplate",
+  title: "Página de Detalhes de cases",
 
   // other metadata
-  description: "Esta é a página de detalhes do Blog para Solid Pro",
+  description: "Esta é a página de detalhes de cases do Omnimaker",
 };
 
 const SingleBlogPage = async () => {

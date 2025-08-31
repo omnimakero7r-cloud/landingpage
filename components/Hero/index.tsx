@@ -8,7 +8,7 @@ import Link from "next/link";
 function Hero() {
   return (
     <section className="mx-auto overflow-hidden py-20 md:py-25 xl:py-30">
-      <div className="flex flex-col items-center justify-center mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
+      <div className="flex flex-col items-center justify-center mx-auto max-w-c-1390 px-8 md:px-10 2xl:px-12">
         <div className="grid grid-cols-1 gap-8 items-center lg:grid-cols-2">
           <div className="flex gap-4 flex-col">
             <div>
@@ -27,7 +27,7 @@ function Hero() {
             {/*Botão de ver ao vivo */}
             
               <Button size="lg" className="gap-4 rounded-full h-12 w-50" variant="outline">
-                Ver ao vivo <PhoneCall className="w-4 h-4" />
+                Ver ao vivo <PhoneCall className="w-4 h-12" />
               </Button>
             {/*Botão de criar conta */}       
               <Link href="#" className="gap-4">

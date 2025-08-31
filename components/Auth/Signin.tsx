@@ -55,10 +55,10 @@ const Signin = () => {
               Entrar em sua conta
             </h2>
             <div className="flex flex-col">
-              <div className="flex flex-col md:flex-row items-stretch md:items-center gap-1 md:gap-8">
+              <div className="flex flex-col md:flex-row items-center gap-1 md:gap-8 justify-center">
                 <button
                   aria-label="sign with google"
-                  className="text-body-color dark:text-body-color-dark dark:shadow-two mb-6 flex w-full rounded-full items-center justify-center border border-stroke bg-[#f8f8f8] px-6 py-3 text-base outline-hidden transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-primary dark:border-transparent dark:bg-[#2C303B] dark:hover:border-primary dark:hover:bg-primary/5 dark:hover:text-primary dark:hover:shadow-none"
+                  className="text-body-color dark:text-body-color-dark dark:shadow-two mb-6 flex w-[300px] rounded-full items-center justify-center border border-stroke bg-[#f8f8f8] px-6 py-3 text-base outline-hidden transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-primary dark:border-transparent dark:bg-[#2C303B] dark:hover:border-primary dark:hover:bg-primary/5 dark:hover:text-primary dark:hover:shadow-none"
                 >
                   <span className="mr-3">
                     <svg
@@ -98,7 +98,7 @@ const Signin = () => {
 
                 <button
                   aria-label="signup with github"
-                  className="text-body-color dark:text-body-color-dark dark:shadow-two mb-6 flex w-full items-center justify-center rounded-full border border-stroke bg-[#f8f8f8] px-6 py-3 text-base outline-hidden transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-primary dark:border-transparent dark:bg-[#2C303B] dark:hover:border-primary dark:hover:bg-primary/5 dark:hover:text-primary dark:hover:shadow-none"
+                  className="text-body-color dark:text-body-color-dark dark:shadow-two mb-6 flex w-[300px] items-center justify-center rounded-full border border-stroke bg-[#f8f8f8] px-6 py-3 text-base outline-hidden transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-primary dark:border-transparent dark:bg-[#2C303B] dark:hover:border-primary dark:hover:bg-primary/5 dark:hover:text-primary dark:hover:shadow-none"
                 >
                   <span className="mr-3">
                     <svg
@@ -147,7 +147,7 @@ const Signin = () => {
               </div>
 
               <div className="flex flex-col md:flex-row gap-10 md:justify-between xl:gap-15">
-                <div className="flex flex-wrap gap-4 md:gap-10">
+                <div className="flex flex-wrap md:flex-col justify-between gap-4 md:gap-10">
                   <div className="mb-4 flex items-center">
                     <input
                       id="default-checkbox"
@@ -183,10 +183,12 @@ const Signin = () => {
                     Esqueceu sua senha?
                   </a>
                 </div>
+                <div className="flex justify-center">
                 {/*Botão de login */}
                 <Link href="#">
-                    <InteractiveHoverButton text="Entrar" className="px-3 w-full md:w-80 h-15" aria-label="login with email and password" />
+                    <InteractiveHoverButton text="Entrar" className="px-3 w-[300px] md:w-60 h-12" aria-label="login with email and password" />
                   </Link>          
+                  </div>
               </div>
 
               <div className="mt-12.5 border-t border-stroke py-5 text-center dark:border-strokedark">

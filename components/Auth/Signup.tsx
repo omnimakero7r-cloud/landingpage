@@ -57,10 +57,10 @@ const Signup = () => {
               Criar uma conta
             </h2>
 
-            <div className="flex flex-col md:flex-row items-stretch md:items-center gap-1 md:gap-8">
+            <div className="flex flex-col md:flex-row items-center gap-1 md:gap-8 justify-center">
               <button
                 aria-label="signup with google"
-                className="text-body-color dark:text-body-color-dark dark:shadow-two mb-6 flex w-full items-center justify-center rounded-full border border-stroke bg-[#f8f8f8] px-6 py-3 text-base outline-hidden transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-primary dark:border-transparent dark:bg-[#2C303B] dark:hover:border-primary dark:hover:bg-primary/5 dark:hover:text-primary dark:hover:shadow-none"
+                className="text-body-color dark:text-body-color-dark dark:shadow-two mb-6 flex w-[300px] rounded-full items-center justify-center border border-stroke bg-[#f8f8f8] px-6 py-3 text-base outline-hidden transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-primary dark:border-transparent dark:bg-[#2C303B] dark:hover:border-primary dark:hover:bg-primary/5 dark:hover:text-primary dark:hover:shadow-none"
               >
                 <span className="mr-3">
                   <svg
@@ -100,7 +100,7 @@ const Signup = () => {
 
               <button
                 aria-label="signup with github"
-                className="text-body-color dark:text-body-color-dark dark:shadow-two mb-6 flex w-full items-center justify-center rounded-full border border-stroke bg-[#f8f8f8] px-6 py-3 text-base outline-hidden transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-primary dark:border-transparent dark:bg-[#2C303B] dark:hover:border-primary dark:hover:bg-primary/5 dark:hover:text-primary dark:hover:shadow-none"
+                className="text-body-color dark:text-body-color-dark dark:shadow-two mb-6 flex w-[300px] rounded-full items-center justify-center border border-stroke bg-[#f8f8f8] px-6 py-3 text-base outline-hidden transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-primary dark:border-transparent dark:bg-[#2C303B] dark:hover:border-primary dark:hover:bg-primary/5 dark:hover:text-primary dark:hover:shadow-none"
               >
                 <span className="mr-3">
                   <svg
@@ -205,13 +205,13 @@ const Signup = () => {
                     Manter-me conectado
                   </label>
                 </div>
-
+                <div className="flex justify-center">
                 {/*Botão de cadastro */}
                
                   <Link href="#">
-                    <InteractiveHoverButton text="Criar conta" className="px-3 w-full md:w-80 h-15" aria-label="signup with email and password" />
+                    <InteractiveHoverButton text="Criar conta" className="px-3 w-[300px] md:w-60 h-12" aria-label="signup with email and password" />
                   </Link>
-                            
+                </div>
               </div>
 
               <div className="mt-12.5 border-t border-stroke py-5 text-center dark:border-strokedark">
