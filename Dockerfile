@@ -51,3 +51,12 @@ ENV NODE_ENV=production
 
 # Comando de inicialização
 CMD ["node", "server.js"]
+
+# Verificação de saúde
+HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
+  CMD wget --no-verbose --tries=1 --spider http://localhost:3000/api/health || exit 1
+
+# Labels para metadados
+LABEL maintainer="joaog@omnimaker.io"
+LABEL version="1.3.1"
+LABEL description="Omnimaker Landing Page"
