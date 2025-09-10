@@ -9,13 +9,13 @@ import {
   useRef,
   useState,
 } from "react"
-import { DynamicAnimationOptions, motion } from "framer-motion"
+import { AnimationOptions, motion } from "framer-motion"
 import { cn } from "@/lib/utils"
 
 interface TextProps {
   children: React.ReactNode
   reverse?: boolean
-  transition?: DynamicAnimationOptions
+  transition?: AnimationOptions
   splitBy?: "words" | "characters" | "lines" | string
   staggerDuration?: number
   staggerFrom?: "first" | "last" | "center" | "random" | number
@@ -44,12 +44,12 @@ const VerticalCutReveal = forwardRef<VerticalCutRevealRef, TextProps>(
       children,
       reverse = false,
       transition = {
-        type: "spring",
+        type: "decay",
         stiffness: 190,
         damping: 22,
       },
-      splitBy = "words",
-      staggerDuration = 0.2,
+      splitBy = "lines",
+      staggerDuration = 0.3,
       staggerFrom = "first",
       containerClassName,
       wordLevelClassName,
@@ -66,7 +66,7 @@ const VerticalCutReveal = forwardRef<VerticalCutRevealRef, TextProps>(
     const text = typeof children === "string" ? children : children?.toString() || ""
     const [isAnimating, setIsAnimating] = useState(false)
 
-    // Разделение текста на символы с поддержкой Unicode и эмодзи
+    // Divida o texto em caracteres com suporte a Unicode e emojis
     const splitIntoCharacters = (text: string): string[] => {
       if (typeof Intl !== "undefined" && "Segmenter" in Intl) {
         const segmenter = new Intl.Segmenter("en", { granularity: "grapheme" })
@@ -75,7 +75,7 @@ const VerticalCutReveal = forwardRef<VerticalCutRevealRef, TextProps>(
       return Array.from(text)
     }
 
-    // Разделение текста на основе параметра splitBy
+    // Dividir texto com base no parâmetro splitBy
     const elements = useMemo(() => {
       const words = text.split(" ")
       if (splitBy === "characters") {
@@ -91,7 +91,7 @@ const VerticalCutReveal = forwardRef<VerticalCutRevealRef, TextProps>(
           : text.split(splitBy)
     }, [text, splitBy])
 
-    // Расчет задержек для эффекта stagger
+    // Calculo das delays para o efeito stagger
     const getStaggerDelay = useCallback(
       (index: number) => {
         const total =
@@ -148,10 +148,19 @@ const VerticalCutReveal = forwardRef<VerticalCutRevealRef, TextProps>(
     }
 
     return (
-      <span
+      <motion.span
+        initial={{ opacity: 0, scale: 0.9, y: 10 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        transition={{
+          type: "decay",
+          stiffness: 400,
+          damping: 25,
+          duration: 0.4
+        }}
         className={cn(
           containerClassName,
-          "flex flex-wrap whitespace-pre-wrap",
+          // Estilo WhatsApp - fundo verde com bordas arredondadas
+          "flex flex-wrap whitespace-pre-wrap rounded-t-3xl rounded-l-3xl rounded-br-sm bg-lime-100 text-black shadow-md my-1 px-4 py-2 max-w-md",
           splitBy === "lines" && "flex-col"
         )}
         onClick={onClick}
@@ -206,7 +215,7 @@ const VerticalCutReveal = forwardRef<VerticalCutRevealRef, TextProps>(
             </span>
           )
         })}
-      </span>
+      </motion.span>
     )
   }
 )

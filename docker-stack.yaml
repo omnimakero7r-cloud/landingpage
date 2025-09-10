@@ -1,0 +1,53 @@
+
+# docker-stack.yml
+version: '3.8'
+
+services:
+  landingpage:
+    image: ${DOCKER_REGISTRY}/omnimaker-landingpage:${VERSION:-latest}
+    deploy:
+      replicas: 2
+      update_config:
+        parallelism: 1
+        delay: 10s
+        failure_action: rollback
+        order: start-first
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+      placement:
+        constraints:
+          - node.role == worker
+      labels:
+        # Traefik labels
+        - traefik.enable=true
+        - traefik.http.routers.landingpage.rule=Host(`omnimaker.io`)
+        - traefik.http.routers.landingpage.entrypoints=websecure
+        - traefik.http.routers.landingpage.tls.certresolver=lestencryptresolver
+        - traefik.http.routers.landingpage.service=landingpage
+        - traefik.http.services.landingpage.loadbalancer.server.port=3000
+        - traefik.http.services.landingpage.loadbalancer.passHostHeader=true
+        
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_BASE_URL=https://omnimaker.io
+      - NEXT_PUBLIC_ENVIRONMENT=production
+      - NEXT_PUBLIC_GA_ID=${GA_ID}
+      - NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION=${GOOGLE_SITE_VERIFICATION}
+      - NEXT_PUBLIC_YANDEX_VERIFICATION=${YANDEX_VERIFICATION}
+      - NEXT_PUBLIC_SW_ENABLED=true
+      - NEXT_PUBLIC_PWA_ENABLED=true
+    networks:
+      - rede_omni1
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+networks:
+  rede_omni1:
+    name: rede_omni1
+    external: true

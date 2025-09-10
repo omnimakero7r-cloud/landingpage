@@ -43,7 +43,7 @@ const tasks = [
 export default function FeatureSection() {
   return (
     <section className="relative w-full py-40 px-4 text-foreground">
-      <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+      <div className="mx-auto max-w-c-1390 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
         {/* LEFT SIDE - Task Loop with Vertical Bar */}
         <div className="relative w-full max-w-md">
           <Card className="overflow-hidden bg-muted/30 dark:bg-muted/20 backdrop-blur-md shadow-xl rounded-lg">
@@ -91,13 +91,15 @@ export default function FeatureSection() {
         {/* RIGHT SIDE - Content */}
         <div className="space-y-6">
           <Badge variant="success" className="px-3 py-1 text-sm">
-            Automação de Fluxos
+            Fluxos inteligentes
           </Badge>
-          <h3 className="text-lg sm:text-md lg:text-2xl font-normal text-gray-900 dark:text-white leading-relaxed">
-            Automatize tarefas repetitivas {" "}
-            <span className="text-gray-500 dark:text-gray-400 text-sm sm:text-base lg:text-2xl"> com Omnimaker. 
-              Otimize seus atendimentos com automação orientada por IA — desde agendamento, suporte e vendas — ajudando a sua equipe de funcionários com notificações inteligentes. Você foca no que realmente importa e economize tempo com soluções prontas para suas necessidades de negócios.</span>
+          <h3 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white">
+            Automatize tarefas repetitivas
           </h3>
+            
+            <p className="text-gray-500 dark:text-gray-400 text-sm sm:text-base lg:text-2xl"> 
+              Com Omnimaker otimize seus atendimentos com automação orientada por IA — desde agendamento, suporte e vendas — ajudando a sua equipe de funcionários com notificações inteligentes. Você foca no que realmente importa e economize tempo com soluções prontas para suas necessidades de negócios.
+            </p>
 
           <div className="flex gap-3 flex-wrap">
             <Badge variant="outline" className="px-2 py-1 text-xs">Bots IA</Badge>

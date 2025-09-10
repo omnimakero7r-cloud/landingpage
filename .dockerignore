@@ -1,0 +1,14 @@
+# .dockerignore
+.git
+.gitignore
+.next
+node_modules
+npm-debug.log*
+.nyc_output
+.coverage
+.env*.local
+README.md
+Dockerfile
+.dockerignore
+docker-compose*.yml
+.docs

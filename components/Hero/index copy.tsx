@@ -1,7 +1,7 @@
 import { PhoneCall } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { WhatsAppConversation } from "@/components/ui/whatsapp-message-animation";
+import { VerticalCutReveal } from "@/components/ui/vertical-cut-reveal"
 import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
 import Link from "next/link";
 
@@ -35,37 +35,46 @@ function Hero() {
               </Link>
             </div>
           </div>
-          <div className="w-full text-lg md:text-xl lg:text-2xl flex flex-col justify-center font-Grotesk">
-            <WhatsAppConversation
-              messages={[
-                {
-                  content: "Olá, aqui é o João.",
-                  isOwn: true,
-                  showTyping: false,
-                  typingDuration: 0,
-                },
-                {
-                  content: "Olá 👋 João, sou a Maria.",
-                  isOwn: false,
-                  showTyping: true,
-                  typingDuration: 2000,
-                },
-                {
-                  content: "Assistente virtual da Omnimaker! 😊",
-                  isOwn: false,
-                  showTyping: true,
-                  typingDuration: 1500,
-                },
-                {
-                  content: "Como posso te ajudar hoje❓",
-                  isOwn: false,
-                  showTyping: true,
-                  typingDuration: 1500,
-                }
-              ]}
-              messageDelay={800}
-              initialDelay={1000}
-            />
+          <div className="w-full text-lg md:text-xl lg:text-2xl flex flex-col items-end justify-center font-Grotesk">
+            <VerticalCutReveal
+              splitBy="lines"
+              staggerDuration={0.025}
+              staggerFrom="last"
+              transition={{
+                type: "spring",
+                stiffness: 200,
+                damping: 21,
+              }}
+            >
+              {`Olá 👋, sou a Maria.`}
+            </VerticalCutReveal>
+            <VerticalCutReveal
+              splitBy="lines"
+              staggerDuration={0.025}
+              staggerFrom="first"
+              reverse={false}
+              transition={{
+                type: "spring",
+                stiffness: 200,
+                damping: 21,
+                delay: 1,
+              }}
+            >
+              {`Assistente virtual da Omnimaker! 😊`}
+            </VerticalCutReveal>
+            <VerticalCutReveal
+              splitBy="lines"
+              staggerDuration={0.025}
+              staggerFrom="first"
+              transition={{
+                type: "spring",
+                stiffness: 200,
+                damping: 21,
+                delay: 2,
+              }}
+            >
+              {`Como posso te ajudar hoje❓`}
+            </VerticalCutReveal>
           </div>          
         </div>
       </div>

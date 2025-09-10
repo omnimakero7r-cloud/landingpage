@@ -11,7 +11,7 @@ interface MarqueeProps extends React.HTMLAttributes<HTMLDivElement> {
 export function Marquee({
   children,
   pauseOnHover = false,
-  direction = "left",
+  direction = "right",
   speed = 30,
   className,
   ...props

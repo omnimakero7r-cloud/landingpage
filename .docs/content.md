@@ -1,5 +1,5 @@
 🚀 Landing Page – Omnimaker
-## 1. Hero Section
+## 01. Hero Section
 
 Headline Impactante:
 👉 "Seu WhatsApp trabalhando por você 24 horas por dia: agende, venda e atenda clientes automaticamente."
@@ -11,7 +11,7 @@ Com a Omnimaker, você coloca a inteligência artificial para trabalhar no seu l
 CTA:
 [ Quero ver na prática – Agendar demonstração gratuita ]
 
-## 2. Benefícios (gatilho de ganho imediato + economia)
+## 02. Benefícios (gatilho de ganho imediato + economia)
 
 Título: "Resultados que fazem diferença já nos primeiros dias"
 
@@ -57,7 +57,7 @@ Transferência para humano só quando realmente necessário
 
 Relatórios de conversão para você acompanhar resultados
 
-## 4. Planos (gatilho de escassez + comparação)
+## 04. Planos (gatilho de escassez + comparação)
 
 Título: "Três opções para acelerar o crescimento do seu negócio"
 
@@ -102,7 +102,7 @@ Suporte prioritário
 CTA abaixo dos planos:
 [ Escolher meu plano agora ]
 
-5. Prova Social / ROI (gatilho de autoridade + confiança)
+## 05. Prova Social / ROI (gatilho de autoridade + confiança)
 
 Título: "O que você pode esperar da Omnimaker"
 
@@ -115,7 +115,7 @@ Título: "O que você pode esperar da Omnimaker"
 “Depois da Omnimaker, meu consultório reduziu pela metade os pacientes que faltavam e dobramos o número de novos atendimentos em apenas 2 meses.”
 — Dr. Carlos, dentista
 
-6. Implementação (gatilho de facilidade + velocidade)
+## 06. Implementação (gatilho de facilidade + velocidade)
 
 Título: "Em apenas 5 dias, seu negócio já está rodando"
 
@@ -129,7 +129,7 @@ Dia 5: Treinamento da sua equipe e Go-Live
 
 ➡️ Você não precisa entender de tecnologia. Nós entregamos pronto, funcionando e com suporte.
 
-7. FAQ (gatilho de quebra de objeções)
+## 07. FAQ (gatilho de quebra de objeções)
 
 "É caro para meu pequeno negócio?"
 Na verdade, é o oposto: o custo equivale a uma fração de um funcionário, mas com disponibilidade 24/7.
@@ -141,7 +141,7 @@ Você não precisa saber. Fazemos toda a configuração e treinamento.
 Sem problema! O atendimento é híbrido: o bot cuida do básico e transfere para sua equipe quando necessário
 .
 
-8. Call to Action Final (gatilho de urgência)
+## 08. Call to Action Final (gatilho de urgência)
 
 Título: "Cada dia sem automação é uma venda que você perde."
 
