@@ -13,7 +13,7 @@ export const BillingToggle = ({ isMonthly, onToggle, switchRef }: BillingToggleP
       Mensal
     </span>
     <label className="relative inline-flex items-center cursor-pointer">
-      <Label>
+      <Label aria-label="Switch">
         <Switch
           ref={switchRef as any}
           checked={!isMonthly}

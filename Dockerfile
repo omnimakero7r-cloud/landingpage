@@ -2,7 +2,7 @@
 FROM node:20-alpine AS base
 
 # Instalar dependências necessárias
-RUN apk add --no-cache libc6-compat
+RUN apk add --no-cache libc6-compat wget
 
 # Set working directory
 WORKDIR /app
@@ -12,8 +12,8 @@ COPY package*.json ./
 COPY pnpm-lock.yaml* ./
 
 # Instalar pnpm e dependências
-RUN npm install -g pnpm
-RUN pnpm install --frozen-lockfile
+RUN corepack enable && corepack prepare pnpm@latest --activate
+RUN pnpm install --frozen-lockfile || pnpm install --no-frozen-lockfile
 
 # Build stage
 FROM base AS builder
@@ -28,6 +28,9 @@ RUN pnpm build
 # Production stage
 FROM node:20-alpine AS runner
 WORKDIR /app
+
+# Instalar wget para healthcheck
+RUN apk add --no-cache wget
 
 # Criar usuário não-root
 RUN addgroup --system --gid 1001 nodejs
@@ -53,10 +56,12 @@ ENV NODE_ENV=production
 CMD ["node", "server.js"]
 
 # Verificação de saúde
-HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
+HEALTHCHECK --interval=30s --timeout=10s --start-period=30s --retries=3 \
   CMD wget --no-verbose --tries=1 --spider http://localhost:3000/api/health || exit 1
 
 # Labels para metadados
-LABEL maintainer="joaog@omnimaker.io"
-LABEL version="1.3.1"
+LABEL maintainer="contato@omnimaker.io"
+LABEL version="v0.1.0"
 LABEL description="Omnimaker Landing Page"
+LABEL org.opencontainers.image.source="https://github.com/omnimaker/landingpage"
+LABEL org.opencontainers.image.vendor="Omnimaker"
