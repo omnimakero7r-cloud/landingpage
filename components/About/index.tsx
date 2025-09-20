@@ -344,16 +344,18 @@ const About = () => {
               className="animate_right relative mx-auto hidden aspect-[588/526.5] md:block md:w-1/2"
             >
               <Image
-                src="/images/about/about-light-02.png"
+                src="/images/about/IA-business.png"
                 alt="About"
                 className="dark:hidden"
-                fill
+                width={595}
+                height={332}
               />
               <Image
-                src="/images/about/about-dark-02.png"
+                src="/images/about/IA-business.png"
                 alt="About"
                 className="hidden dark:block"
-                fill
+                width={595}
+                height={332}
               />
             </MotionDiv>
           </div>

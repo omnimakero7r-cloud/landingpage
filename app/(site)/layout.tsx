@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 // Configuração base de metadata
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://omnimaker.io'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://omnimaker.com.br'),
   title: {
     default: "Omnimaker - Automação de WhatsApp com IA",
     template: "%s | Omnimaker"
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     "lead scoring",
     "agendamento automático"
   ],
-  authors: [{ name: "Omnimaker", url: "https://omnimaker.io" }],
+  authors: [{ name: "Omnimaker", url: "https://omnimaker.com.br" }],
   creator: "Omnimaker",
   publisher: "Omnimaker",
   formatDetection: {
@@ -60,9 +60,9 @@ export const metadata: Metadata = {
     siteName: "Omnimaker",
     images: [
       {
-        url: "/images/og-image.png",
+        url: "/images/og_image.png",
         width: 1200,
-        height: 630,
+        height: 676,
         alt: "Omnimaker - Automação de WhatsApp com IA",
       },
     ],
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Omnimaker - Automação de WhatsApp com IA",
     description: "Automatize o atendimento e as vendas no WhatsApp com IA para pequenas empresas, clínicas e profissionais liberais — setup completo feito lado a lado, pronto para rodar.",
-    images: ["/images/og-image.png"],
+    images: ["/images/og_image.png"],
     creator: "@omnimaker",
     site: "@omnimaker",
   },
